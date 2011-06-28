@@ -1,6 +1,6 @@
 current_path=`pwd`
 echo "\033[0;34mUpgrading Oh My Zsh\033[0m"
-( cd $ZSH && git pull origin master )
+( cd $ZSH && git fetch upstream && git merge upstream/master )
 echo "\033[0;32m"'         __                                     __   '"\033[0m"
 echo "\033[0;32m"'  ____  / /_     ____ ___  __  __   ____  _____/ /_  '"\033[0m"
 echo "\033[0;32m"' / __ \/ __ \   / __ `__ \/ / / /  /_  / / ___/ __ \ '"\033[0m"
