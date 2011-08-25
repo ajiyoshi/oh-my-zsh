@@ -23,7 +23,7 @@ alias lor='cd ~/Development/The Land of Rhul'
 alias dep='cd ~/Development/departures'
 alias fw='cd ~/Development/fw-frontend'
 alias fwt='cd ~/Development/fw-tools'
-alias tl='cd ~/Development/t+l'
+alias tl='cd ~/Development/travelandleisure'
 alias red='cd ~/Development/redmine'
 alias books='cd ~/Development/books'
 
