@@ -21,9 +21,12 @@ alias girl='cd ~/Development/girlscout'
 alias lor='cd ~/Development/The Land of Rhul'
 
 alias dep='cd ~/Development/departures'
+alias et='cd ~/Development/elite-travel'
 alias fw='cd ~/Development/fw-frontend'
 alias fwt='cd ~/Development/fw-tools'
 alias tl='cd ~/Development/travelandleisure'
+alias tl2='cd ~/Development/travelandleisure-2'
+alias tlka='cd ~/Development/travelandleisure-kickapps'
 alias red='cd ~/Development/redmine'
 alias books='cd ~/Development/books'
 
