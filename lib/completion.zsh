@@ -10,6 +10,10 @@ WORDCHARS=''
 
 zmodload -i zsh/complist
 
+# This way you tell zsh comp to take the first part of the path to be exact, and to avoid partial globs.
+# http://lethalman.blogspot.com/2009/10/speeding-up-zsh-completion.html
+zstyle ':completion:*' accept-exact '*(N)'
+
 ## case-insensitive (all),partial-word and then substring completion
 if [ "x$CASE_SENSITIVE" = "xtrue" ]; then
   zstyle ':completion:*' matcher-list 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
