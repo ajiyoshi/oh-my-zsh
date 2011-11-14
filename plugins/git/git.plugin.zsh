@@ -35,6 +35,14 @@ alias ga='git add'
 compdef _git ga=git-add
 alias gm='git merge'
 compdef _git gm=git-merge
+alias gbd='git branch -d'
+compdef _git gm=git-branch
+alias gbr='git branch -r'
+compdef _git gm=git-branch
+alias gcob='git checkout -b'
+compdef _git gm=git-checkout
+alias grm='git status | grep deleted | awk "{print \$3}" | xargs git rm'
+compdef _git gm=git-status
 
 # Git and svn mix
 alias git-svn-dcommit-push='git svn dcommit && git push github master:svntrunk'
@@ -58,3 +66,10 @@ alias ggpush='git push origin $(current_branch)'
 compdef ggpush=git
 alias ggpnp='git pull origin $(current_branch) && git push origin $(current_branch)'
 compdef ggpnp=git
+
+
+# Speed up git tab-completions
+# http://talkings.org/post/5236392664/zsh-and-slow-git-completion
+__git_files () { 
+    _wanted files expl 'local files' _files 
+}
