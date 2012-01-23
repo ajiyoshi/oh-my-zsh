@@ -11,6 +11,8 @@ alias ..='cd ..'
 alias dev='cd ~/Development'
 alias wtf='whoami | ps u'
 alias log_cleanup='sudo rm -f /private/var/log/asl/*'
+alias show_hidden='defaults write com.apple.Finder AppleShowAllFiles YES && killall Finder && open /System/Library/CoreServices/Finder.app'
+alias hide_hidden='defaults write com.apple.Finder AppleShowAllFiles NO && killall Finder && open /System/Library/CoreServices/Finder.app'
 
 # git
 alias gs=gss
