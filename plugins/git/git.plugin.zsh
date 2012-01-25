@@ -44,6 +44,8 @@ alias gcob='git checkout -b'
 compdef _git gm=git-checkout
 alias grm='git status | grep deleted | awk "{print \$3}" | xargs git rm'
 compdef _git gm=git-status
+alias grh='git reset HEAD'
+alias grhh='git reset HEAD --hard'
 
 # Git and svn mix
 alias git-svn-dcommit-push='git svn dcommit && git push github master:svntrunk'
