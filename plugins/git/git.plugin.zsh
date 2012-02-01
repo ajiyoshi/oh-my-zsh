@@ -9,7 +9,7 @@ alias gup='git fetch && git rebase'
 compdef _git gup=git-fetch
 alias gp='git push'
 compdef _git gp=git-push
-gdv() { git-diff -w "$@" | view - }
+gdv() { git diff -w "$@" | view - }
 compdef _git gdv=git-diff
 alias gc='git commit -v'
 compdef _git gc=git-commit
@@ -44,6 +44,8 @@ alias gcob='git checkout -b'
 compdef _git gm=git-checkout
 alias grm='git status | grep deleted | awk "{print \$3}" | xargs git rm'
 compdef _git gm=git-status
+alias grh='git reset HEAD'
+alias grhh='git reset HEAD --hard'
 
 # Git and svn mix
 alias git-svn-dcommit-push='git svn dcommit && git push github master:svntrunk'
