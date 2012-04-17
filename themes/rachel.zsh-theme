@@ -8,12 +8,12 @@ ZSH_THEME_GIT_PROMPT_CLEAN=""
 
 RPROMPT='${return_status}$(git_prompt_status)%{$reset_color%}'
 
-ZSH_THEME_GIT_PROMPT_ADDED="%{$fg[green]%} ✚"
-ZSH_THEME_GIT_PROMPT_MODIFIED="%{$fg[blue]%} ✹"
-ZSH_THEME_GIT_PROMPT_DELETED="%{$fg[red]%} ✖"
-ZSH_THEME_GIT_PROMPT_RENAMED="%{$fg[magenta]%} ➜"
-ZSH_THEME_GIT_PROMPT_UNMERGED="%{$fg[yellow]%} ═"
-ZSH_THEME_GIT_PROMPT_UNTRACKED="%{$fg[cyan]%} ✭"
+ZSH_THEME_GIT_PROMPT_ADDED="%{$fg[green]%} +"
+ZSH_THEME_GIT_PROMPT_MODIFIED="%{$fg[blue]%} *"
+ZSH_THEME_GIT_PROMPT_DELETED="%{$fg[red]%} D"
+ZSH_THEME_GIT_PROMPT_RENAMED="%{$fg[magenta]%} M"
+ZSH_THEME_GIT_PROMPT_UNMERGED="%{$fg[yellow]%} ?"
+ZSH_THEME_GIT_PROMPT_UNTRACKED="%{$fg[cyan]%} ?"
 
 # Parsing git dirty status slows down my prompt tremendously without adding much value.
 # This variant of git_prompt_info just grabs the branch.
